@@ -20,7 +20,8 @@ public class CustomerBOIMPL implements CustomerBO {
 
     @Override
     public boolean deleteCustomer(String id, Connection connection) throws Exception {
-        return false;
+        var customerDAOImpl = new CustomerDAOImpl();
+        return customerDAOImpl.deleteCustomer(id, connection);
     }
 
     @Override

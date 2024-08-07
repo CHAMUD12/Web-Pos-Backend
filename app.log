@@ -227,3 +227,7 @@ java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
 21:28:23:136 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
 21:28:38:998 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 21:28:39:122 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:43:32:059 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:43:32:511 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:46:17:586 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:46:17:794 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully

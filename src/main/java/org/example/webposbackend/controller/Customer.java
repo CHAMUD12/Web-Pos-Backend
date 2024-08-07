@@ -111,7 +111,25 @@ public class Customer extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doDelete(req, resp);
+        String customerId = req.getParameter("id");
+        if (customerId == null || customerId.isEmpty()) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Customer ID is required");
+            return;
+        }
+
+        try (var writer = resp.getWriter()) {
+            var customerBOIMPL = new CustomerBOIMPL();
+            boolean result = customerBOIMPL.deleteCustomer(customerId, connection);
+            if (result) {
+                writer.write("Customer deleted successfully");
+                resp.setStatus(HttpServletResponse.SC_OK);
+            } else {
+                resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Customer not found");
+            }
+        } catch (Exception e) {
+            logger.error("Delete failed", e);
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
     @Override
