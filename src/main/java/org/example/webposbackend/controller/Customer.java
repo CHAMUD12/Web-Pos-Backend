@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.webposbackend.bo.CustomerBOIMPL;
+import org.example.webposbackend.dao.CustomerDAOImpl;
 import org.example.webposbackend.dto.CustomerDTO;
 import org.example.webposbackend.util.Util;
 import org.slf4j.Logger;
@@ -17,8 +18,10 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(urlPatterns = "/customer", loadOnStartup = 1)
 public class Customer extends HttpServlet {
@@ -63,11 +66,21 @@ public class Customer extends HttpServlet {
         }
     }
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    try (PrintWriter writer = resp.getWriter()) {
+        Jsonb jsonb = JsonbBuilder.create();
+        var customerDAOImpl = new CustomerDAOImpl();
+        List<CustomerDTO> customers = customerDAOImpl.getAllCustomers(connection); // Add this method to retrieve all customers
+        String json = jsonb.toJson(customers);
+        writer.write(json);
+        resp.setContentType("application/json");
+        resp.setStatus(HttpServletResponse.SC_OK);
+    } catch (Exception e) {
+        resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        e.printStackTrace();
     }
-
+}
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPut(req, resp);

@@ -4,7 +4,10 @@ import org.example.webposbackend.dto.CustomerDTO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public final class CustomerDAOImpl implements CustomerDAO {
     public static final String SAVE_CUSTOMER = "INSERT INTO customer (id, name, address, mobile) VALUES (?, ?, ?, ?)";
@@ -48,5 +51,23 @@ public final class CustomerDAOImpl implements CustomerDAO {
     @Override
     public CustomerDTO getCustomer(String id, Connection connection) throws SQLException {
         return null;
+    }
+
+    @Override
+    public List<CustomerDTO> getAllCustomers(Connection connection) throws SQLException {
+        List<CustomerDTO> customers = new ArrayList<>();
+        String query = "SELECT * FROM customer";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                CustomerDTO customer = new CustomerDTO();
+                customer.setId(rs.getString("id"));
+                customer.setName(rs.getString("name"));
+                customer.setAddress(rs.getString("address"));
+                customer.setMobile(rs.getString("mobile"));
+                customers.add(customer);
+            }
+        }
+        return customers;
     }
 }
