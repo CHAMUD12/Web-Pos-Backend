@@ -35,7 +35,14 @@ public final class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public boolean updateCustomer(String id, CustomerDTO customer, Connection connection) throws SQLException {
-        return false;
+        String query = "UPDATE customer SET name = ?, address = ?, mobile = ? WHERE id = ?";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            ps.setString(1, customer.getName());
+            ps.setString(2, customer.getAddress());
+            ps.setString(3, customer.getMobile());
+            ps.setString(4, id);
+            return ps.executeUpdate() > 0;
+        }
     }
 
     @Override

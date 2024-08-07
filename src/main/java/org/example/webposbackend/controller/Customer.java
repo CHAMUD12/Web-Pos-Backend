@@ -66,24 +66,47 @@ public class Customer extends HttpServlet {
         }
     }
 
-@Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    try (PrintWriter writer = resp.getWriter()) {
-        Jsonb jsonb = JsonbBuilder.create();
-        var customerDAOImpl = new CustomerDAOImpl();
-        List<CustomerDTO> customers = customerDAOImpl.getAllCustomers(connection); // Add this method to retrieve all customers
-        String json = jsonb.toJson(customers);
-        writer.write(json);
-        resp.setContentType("application/json");
-        resp.setStatus(HttpServletResponse.SC_OK);
-    } catch (Exception e) {
-        resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        e.printStackTrace();
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try (PrintWriter writer = resp.getWriter()) {
+            Jsonb jsonb = JsonbBuilder.create();
+            var customerDAOImpl = new CustomerDAOImpl();
+            List<CustomerDTO> customers = customerDAOImpl.getAllCustomers(connection); // Add this method to retrieve all customers
+            String json = jsonb.toJson(customers);
+            writer.write(json);
+            resp.setContentType("application/json");
+            resp.setStatus(HttpServletResponse.SC_OK);
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            e.printStackTrace();
+        }
     }
-}
+
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
+        if (req.getContentType() == null || !req.getContentType().toLowerCase().startsWith("application/json")) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            logger.error("Request not matched with the criteria");
+            return;
+        }
+
+        try (var writer = resp.getWriter()) {
+            Jsonb jsonb = JsonbBuilder.create();
+            var customerBOIMPL = new CustomerBOIMPL();
+            CustomerDTO customer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
+            String customerId = req.getParameter("id");
+
+            boolean result = customerBOIMPL.updateCustomer(customerId, customer, connection);
+            if (result) {
+                writer.write("Customer updated successfully");
+                resp.setStatus(HttpServletResponse.SC_OK);
+            } else {
+                resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Customer not found");
+            }
+        } catch (Exception e) {
+            logger.error("Update failed", e);
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
     @Override

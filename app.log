@@ -203,3 +203,27 @@ java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
 13:44:53:319 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
 13:45:08:879 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 13:45:09:077 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+20:12:06:285 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:12:06:768 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:27:19:330 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:27:19:754 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:33:45:326 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:33:45:762 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:36:38:222 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:36:38:659 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:37:51:521 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+20:37:51:569 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+20:49:26:881 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:49:27:363 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:51:43:664 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:51:44:143 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:53:31:246 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+20:53:31:400 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:12:16:561 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:12:16:980 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:25:51:550 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:25:52:033 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:28:22:727 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:28:23:136 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:28:38:998 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:28:39:122 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully

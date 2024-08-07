@@ -14,7 +14,8 @@ public class CustomerBOIMPL implements CustomerBO {
 
     @Override
     public boolean updateCustomer(String id, CustomerDTO customer, Connection connection) throws Exception {
-        return false;
+        var customerDAOImpl = new CustomerDAOImpl();
+        return customerDAOImpl.updateCustomer(id, customer, connection);
     }
 
     @Override
