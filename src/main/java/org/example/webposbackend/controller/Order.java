@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(urlPatterns = "/orders", loadOnStartup = 1)
 public class Order extends HttpServlet {
@@ -67,6 +68,21 @@ public class Order extends HttpServlet {
         } catch (Exception e) {
             logger.error("Failed to parse request", e);
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Failed to parse request: " + e.getMessage());
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("application/json");
+
+        try {
+            List<OrderDTO> orders = orderBO.getAllOrders(); // Implement this method in your BO layer
+            Jsonb jsonb = JsonbBuilder.create();
+            String json = jsonb.toJson(orders);
+            resp.getWriter().write(json);
+        } catch (SQLException e) {
+            logger.error("Error while fetching orders", e);
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Failed to fetch orders: " + e.getMessage());
         }
     }
 }

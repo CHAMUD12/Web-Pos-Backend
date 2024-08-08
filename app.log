@@ -777,3 +777,15 @@ java.sql.SQLException: Insufficient stock for item 12ab4c6b-147f-4ece-9082-78984
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+00:05:38:714 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+00:05:39:145 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+00:05:39:155 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+00:05:39:177 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+00:08:08:844 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+00:08:09:297 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+00:08:09:302 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+00:08:09:320 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+00:12:17:684 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+00:12:18:129 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+00:12:18:133 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+00:12:18:148 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized

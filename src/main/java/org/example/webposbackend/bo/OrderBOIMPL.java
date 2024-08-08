@@ -5,6 +5,7 @@ import org.example.webposbackend.dto.ItemDTO;
 import org.example.webposbackend.dto.OrderDTO;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class OrderBOIMPL implements OrderBO {
     private final OrderDAO orderDAO;
@@ -35,5 +36,9 @@ public class OrderBOIMPL implements OrderBO {
             orderDAO.saveOrderItem(order.getOrderId(), item);
             orderDAO.updateItemQuantity(item);
         }
+    }
+    @Override
+    public List<OrderDTO> getAllOrders() throws SQLException {
+        return orderDAO.getAllOrders();
     }
 }
