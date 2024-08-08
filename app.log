@@ -410,3 +410,173 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated inc
 11:53:56:383 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
 11:54:28:151 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
 11:54:28:308 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+12:00:29:002 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+12:00:29:128 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+12:01:33:225 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+12:01:33:376 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+15:43:00:604 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+15:43:01:604 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+15:43:01:613 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+15:43:01:651 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+15:54:13:331 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+15:54:13:847 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+15:54:13:849 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+15:54:13:873 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+15:58:15:870 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+15:58:16:346 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+15:58:16:348 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+15:58:16:365 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+16:21:32:758 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+16:21:33:211 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+16:21:33:214 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+16:21:33:235 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+16:28:44:506 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+16:28:44:955 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+16:28:44:957 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+16:28:44:973 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+16:48:09:879 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+16:48:10:477 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+16:48:10:479 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+16:48:10:498 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+16:49:48:981 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+16:49:49:386 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+16:49:49:389 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+16:49:49:414 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+17:11:16:876 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+17:11:17:243 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+17:11:17:246 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+17:11:17:263 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+18:43:15:622 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+18:43:16:181 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+18:43:16:183 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+18:43:16:202 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+18:53:03:120 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+18:53:03:206 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:02:57:114 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+21:02:57:526 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+21:02:57:528 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:02:57:549 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:11:58:114 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+21:11:58:522 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+21:11:58:524 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:11:58:537 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:14:57:988 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+21:14:58:484 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+21:14:58:489 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:14:58:505 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:17:05:952 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+21:17:06:382 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+21:17:06:384 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:17:06:403 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+22:35:36:779 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+22:35:37:317 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+22:35:37:318 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Order - Init method invoked
+22:35:37:321 [RMI TCP Connection(2)-127.0.0.1] ERROR o.e.webposbackend.controller.Order - DB connection not initialized
+javax.naming.NameNotFoundException: Name [cusReg] is not bound in this Context. Unable to find [cusReg].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:520)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:144)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.example.webposbackend.controller.Order.init(Order.java:33)
+	at jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	at jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:837)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:794)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:698)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4172)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4458)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1796)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:422)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:376)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1412)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+22:35:37:325 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+22:35:37:351 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+22:36:18:611 [http-nio-8080-exec-6] INFO  o.e.webposbackend.controller.Order - Init method invoked
+22:36:18:612 [http-nio-8080-exec-6] ERROR o.e.webposbackend.controller.Order - DB connection not initialized
+javax.naming.NameNotFoundException: Name [cusReg] is not bound in this Context. Unable to find [cusReg].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:520)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:144)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.example.webposbackend.controller.Order.init(Order.java:33)
+	at jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	at jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:837)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:794)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:575)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:115)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+22:36:56:411 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+22:36:56:839 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+22:36:56:841 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Order - Init method invoked
+22:36:56:863 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.e.webposbackend.controller.Order - Connection initialized: 1275593900, URL=jdbc:mysql://localhost:3306/pos, MySQL Connector/J
+22:36:56:882 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+22:36:56:903 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+22:37:37:098 [http-nio-8080-exec-8] DEBUG o.e.webposbackend.controller.Order - Received order: OrderDTO(orderId=ORD-634873, orderDate=2024-08-08, customerId=c98c8b58-ff21-4b19-89d6-f3bc9db2372b, total=3500.0, discount=10.0, subTotal=3150.0, cash=5000.0, balance=1850.0, items=[ItemDTO(code=4130eb3e-3d8f-48ce-9911-7b82739f2c76, description=doll, price=1750, qty=2)])
