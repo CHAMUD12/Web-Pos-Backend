@@ -1,4 +1,4 @@
-package org.example.webposbackend.dao;
+package org.example.webposbackend.dao.custom;
 
 import org.example.webposbackend.dto.CustomerDTO;
 
@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-public sealed interface CustomerDAO permits CustomerDAOImpl{
+public interface CustomerDAO {
     String saveCustomer(CustomerDTO customer, Connection connection) throws SQLException;
     boolean updateCustomer(String id, CustomerDTO customer, Connection connection) throws SQLException;
     boolean deleteCustomer(String id, Connection connection) throws SQLException;

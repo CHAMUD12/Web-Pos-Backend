@@ -1,5 +1,6 @@
 package org.example.webposbackend.dao;
 
+import org.example.webposbackend.dao.custom.CustomerDAO;
 import org.example.webposbackend.dto.CustomerDTO;
 
 import java.sql.Connection;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class CustomerDAOImpl implements CustomerDAO {
+public class CustomerDAOIMPL implements CustomerDAO {
     public static final String SAVE_CUSTOMER = "INSERT INTO customer (id, name, address, mobile) VALUES (?, ?, ?, ?)";
     public static final String GET_CUSTOMER = "SELECT * FROM customer WHERE id = ?";
     public static final String UPDATE_CUSTOMER = "UPDATE customer SET name = ?, address = ?, mobile = ?, WHERE id = ?";

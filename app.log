@@ -86,7 +86,7 @@ javax.naming.NameNotFoundException: Name [pos] is not bound in this Context. Una
 11:42:13:880 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 11:42:13:948 [http-nio-8080-exec-6] ERROR o.e.w.controller.Customer - Connection failed
 java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
-	at org.example.webposbackend.dao.CustomerDAOImpl.saveCustomer(CustomerDAOImpl.java:29)
+	at org.example.webposbackend.dao.CustomerDAOIMPL.saveCustomer(CustomerDAOImpl.java:29)
 	at org.example.webposbackend.bo.CustomerBOIMPL.saveCustomer(CustomerBOIMPL.java:12)
 	at org.example.webposbackend.controller.Customer.doPost(Customer.java:79)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
@@ -130,7 +130,7 @@ java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
 11:49:36:092 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 11:49:36:136 [http-nio-8080-exec-7] ERROR o.e.w.controller.Customer - Connection failed
 java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
-	at org.example.webposbackend.dao.CustomerDAOImpl.saveCustomer(CustomerDAOImpl.java:29)
+	at org.example.webposbackend.dao.CustomerDAOIMPL.saveCustomer(CustomerDAOImpl.java:29)
 	at org.example.webposbackend.bo.CustomerBOIMPL.saveCustomer(CustomerBOIMPL.java:12)
 	at org.example.webposbackend.controller.Customer.doPost(Customer.java:80)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
@@ -265,7 +265,7 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated inc
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
-	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.dao.ItemDAOIMPL.updateItem(ItemDAOImpl.java:41)
 	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
 	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
@@ -314,7 +314,7 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated inc
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
-	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.dao.ItemDAOIMPL.updateItem(ItemDAOImpl.java:41)
 	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
 	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
@@ -365,7 +365,7 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated inc
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
 	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
-	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.dao.ItemDAOIMPL.updateItem(ItemDAOImpl.java:41)
 	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
 	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
@@ -789,3 +789,11 @@ java.sql.SQLException: Insufficient stock for item 12ab4c6b-147f-4ece-9082-78984
 00:12:18:129 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
 00:12:18:133 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
 00:12:18:148 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+00:43:37:918 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+00:43:38:518 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+00:43:38:522 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+00:43:38:543 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+00:44:10:221 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+00:44:10:374 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+00:45:46:600 [http-nio-8080-exec-9] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+00:45:46:740 [http-nio-8080-exec-9] INFO  o.e.webposbackend.controller.Item - Item saved successfully

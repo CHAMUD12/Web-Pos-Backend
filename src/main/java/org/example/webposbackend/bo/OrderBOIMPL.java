@@ -1,6 +1,7 @@
 package org.example.webposbackend.bo;
 
-import org.example.webposbackend.dao.OrderDAO;
+import org.example.webposbackend.bo.custom.OrderBO;
+import org.example.webposbackend.dao.custom.OrderDAO;
 import org.example.webposbackend.dto.ItemDTO;
 import org.example.webposbackend.dto.OrderDTO;
 

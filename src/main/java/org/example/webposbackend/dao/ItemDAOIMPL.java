@@ -1,5 +1,6 @@
 package org.example.webposbackend.dao;
 
+import org.example.webposbackend.dao.custom.ItemDAO;
 import org.example.webposbackend.dto.CustomerDTO;
 import org.example.webposbackend.dto.ItemDTO;
 
@@ -10,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class ItemDAOImpl implements ItemDAO {
+public class ItemDAOIMPL implements ItemDAO {
     public static final String SAVE_ITEM = "INSERT INTO items (code, description, price, qty) VALUES (?, ?, ?, ?)";
 
     @Override

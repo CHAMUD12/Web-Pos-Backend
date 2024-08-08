@@ -1,4 +1,4 @@
-package org.example.webposbackend.dao;
+package org.example.webposbackend.dao.custom;
 
 import org.example.webposbackend.dto.ItemDTO;
 import org.example.webposbackend.dto.OrderDTO;

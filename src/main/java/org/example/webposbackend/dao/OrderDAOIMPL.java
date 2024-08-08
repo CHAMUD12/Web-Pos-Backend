@@ -1,5 +1,6 @@
 package org.example.webposbackend.dao;
 
+import org.example.webposbackend.dao.custom.OrderDAO;
 import org.example.webposbackend.dto.ItemDTO;
 import org.example.webposbackend.dto.OrderDTO;
 
@@ -11,7 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderDAOIMPL implements OrderDAO{
+public class OrderDAOIMPL implements OrderDAO {
     private final DataSource dataSource;
 
     public OrderDAOIMPL(DataSource dataSource) {
