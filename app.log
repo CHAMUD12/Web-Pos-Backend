@@ -231,3 +231,15 @@ java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
 21:43:32:511 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
 21:46:17:586 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 21:46:17:794 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:55:34:413 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:55:34:881 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:56:00:739 [http-nio-8080-exec-10] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:56:00:896 [http-nio-8080-exec-10] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:08:55:445 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+11:08:56:017 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+11:08:56:019 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:08:56:036 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:09:38:903 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:09:39:001 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:10:25:614 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:10:25:712 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully
