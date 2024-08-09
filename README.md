@@ -50,6 +50,8 @@ The project is structured to follow best practices in software development, empl
 
 ### [MIT](./LICENSE) License 
 
+### [API Documentation](https://documenter.getpostman.com/view/35385715/2sA3s3GW79)
+
 ## Acknowledgments
 
 - Jakarta EE: For providing a powerful platform for enterprise-level applications.
